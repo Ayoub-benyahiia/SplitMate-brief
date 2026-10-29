@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soldes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <script src="https://kit.fontawesome.com/4e673926d0.js" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Dashboard.css">
+</head>
+
+<body>
+    <header class="flex_row border " style="height: 100px;">
+        <div class="flex_row" style="gap: 10px;">
+            <div>Mon espace</div>
+            <div>></div>
+            <div>Soldes & remboursements</div>
+        </div>
+        <div class="flex_row">
+            <div>26 octobre 2026</div>
+            <div>?</div>
+        </div>
+    </header>
+    <section class="flex_row" style="justify-content: center;background-color: #E9F5F2;">
+        <div style="height: 90%;width: 90%;gap: 30px;display: flex;flex-direction: column;gap: 30px;">
+            <div class="flex_row" style="width: 100%;height:70px ;">
+                <div style="width: 70%;height:100%;">
+                    <h1 style="font-size: 35px;color: #182A3A;">Soldes & remboursements</h1>
+                    <p class="p">Qui doit quoi à qui ? On fait les comptes pour vous.</p>
+                </div>
+                <div style="width: 20%;height:100%;">
+                    <button
+                        style="height: 100%;width: 100%;background-color:#087F73 ;color: white;border-radius: 20px;">+
+                        creer un button</button>
+                </div>
+            </div>
+
+            <div class="flex_row" style="justify-content: start;gap: 20px;">
+                <div class="flex_row border" style="justify-content: space-around;height: 40px;border-radius: 15px;width: 30%;background-color: white;">
+                            <div><i class="bi bi-house-door"></i></div>
+                            <div style="width: 50%;">Colocation</div>
+                            <div>EUR</div>
+                            <div><i class="bi bi-arrow-bar-down"></i></div>
+                </div>
+                <div>4 membres · Parts égales · EUR</div>
+            </div>
+
+
+
+
+            <div>
+                
+                <div class="grid">
+                    <div class="flex_row border"
+                        style="height: 100%;width: 100%; background-color: white;border-radius: 15px;justify-content: space-around;">
+                        <div>
+                            <p>Total partagé</p>
+                            <h1>280 €</h1>
+                            <span>4 dépenses dans Colocation</span>
+                        </div>
+                        <div class="flex_row"
+                            style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 10px;justify-content: center;">
+                            <i class="bi bi-cash-coin"></i></div>
+                    </div>
+                    <div class="flex_row border"
+                        style="height: 100%;width: 100%; background-color: white;border-radius: 15px; justify-content: space-around;">
+                        <div>
+                            <p>Part par personne</p>
+                            <h1>70 €</h1>
+                            <span>280 € répartis entre 4 membres</span>
+                        </div>
+                        <div class="flex_row"
+                            style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 10px;justify-content: center;">
+                            <i class="bi bi-people"></i></div>
+                    </div>
+                    <div class="flex_row border"
+                        style="height: 100%;width: 100%; background-color: white;border-radius: 15px; justify-content: space-around;">
+                        <div>
+                            <p>À rembourser</p>
+                            <h1>50 €</h1>
+                            <span>3 remboursements en attente</span>
+                        </div>
+                        <div class="flex_row"
+                            style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 10px;justify-content: center;">
+                            <i class="bi bi-arrows"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- <div class="flex_row">
+                    <div>
+                        <h1>Votre groupe en détail</h1>
+                        <p>4 membres · Partage à parts égales</p>
+                    </div>
+                    <div class="flex_row border"
+                        style="width:20% ;height: 40px;background-color: white;border-radius: 15px;">
+                        <div></div>
+                        <div>Colocation</div>
+                        <div>EUR</div>
+                        <div>^</div>
+                    </div>
+                </div> -->
+                <div class="flex_row " style=" align-items: start;">
+                    <div class="flex_column border" style="background-color: white;border-radius: 15px;width: 60%;">
+                        <div>
+                            <h1>Qui a payé quoi ?</h1>
+                            <p>Une part de 70 € par personne, pour 4 membres.</p>
+                        </div>
+                        <div class="flex_row" style="height: 40px;background-color: #E9F5F2;">
+                            <div style="width: 50%;">Membre</div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">Payé</div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">Part due</div>
+                            <div class="flex_row" style="width: 20%;justify-content: end;">Solde</div>
+                        </div>
+
+                        <div class="flex_row" style="height: 40px;">
+                            <div class="flex_row" style="width: 50%;justify-content: start;">
+                                <div class="flex_row" style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;justify-content: center;"><h1>K</h1></div>
+                                <div>Karim</div>
+                            </div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">120 €</div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">70 €</div>
+                            <div class="flex_column" style="width: 20%;justify-content: end;">
+                                <div class="flex_row" style="width: 100%;justify-content: end;">+50 €</div>
+                                <div class="flex_row" style="width: 100%;justify-content: end;">À recevoir</div>
+                            </div>
+                        </div>
+
+                        <div class="flex_row" style="height: 40px;">
+                            <div class="flex_row" style="width: 50%;justify-content: start;">
+                                <div class="flex_row" style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;justify-content: center;"><h1>S</h1></div>
+                                <div>Sara</div>
+                            </div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">60 €</div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">70 €</div>
+                            <div class="flex_column" style="width: 20%;justify-content: end;">
+                                <div class="flex_row" style="width: 100%;justify-content: end;">−10 €</div>
+                                <div class="flex_row" style="width: 100%;justify-content: end;">À rembourser  </div>
+                            </div>
+                        </div>
+                        <div class="flex_row" style="height: 40px;">
+                            <div class="flex_row" style="width: 50%;justify-content: start;">
+                                <div class="flex_row" style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;justify-content: center;"><h1>H</h1></div>
+                                <div>Hugu</div>
+                            </div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">50 €</div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">70 €</div>
+                            <div class="flex_column" style="width: 20%;justify-content: end;">
+                                <div class="flex_row" style="width: 100%;justify-content: end;">−20 €</div>
+                                <div class="flex_row" style="width: 100%;justify-content: end;">À rembourser  </div>
+                            </div>
+                        </div>
+
+                        <div class="flex_row" style="height: 40px;">
+                            <div class="flex_row" style="width: 50%;justify-content: start;">
+                                <div class="flex_row" style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;justify-content: center;"><h1>H</h1></div>
+                                <div>Hugu</div>
+                            </div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">50 €</div>
+                            <div class="flex_row" style="width: 15%;justify-content: end;">70 €</div>
+                            <div class="flex_column" style="width: 20%;justify-content: end;">
+                                <div class="flex_row" style="width: 100%;justify-content: end;">−20 €</div>
+                                <div class="flex_row" style="width: 100%;justify-content: end;">À rembourser  </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex_row  border_top" style="height: 80px;">
+                            <p>Total payé · Total des parts</p>
+                            <strong>280 € · 280 €</strong>
+                        </div>
+                        
+                    
+                        <!-- <div class="flex_row border">
+                            <div style="display: flex;gap: 10px;align-items: center;">
+                                <div class="flex-center"
+                                    style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;"><i
+                                        class="bi bi-wifi"></i></div>
+                                <div>
+                                    <strong>internet octobre</strong>
+                                    <p>23 oct. 2026</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="flex_row border">
+                            <div style="display: flex;gap: 10px;align-items: center;">
+                                <div class="flex-center"
+                                    style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;"><i
+                                        class="bi bi-house-door"></i></div>
+                                <div>
+                                    <strong>Produits ménagers</strong>
+                                    <p>23 oct. 2026</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="flex_row border">
+                            <div style="display: flex;gap: 10px;align-items: center;">
+                                <div class="flex-center"
+                                    style="height: 40px;width: 40px;background-color: #E9F5F2;border-radius: 15px;"><i
+                                        class="bi bi-egg-fried"></i></i></i></div>
+                                <div>
+                                    <strong>Dîner du vendredi</strong>
+                                    <p>23 oct. 2026</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                        </div>
+                        <div class="flex_row">
+                            <p>4 dépenses · Colocation</p>
+                            <strong>280$</strong>
+                        </div>
+                        <div></div>-->
+                    </div> 
+                    <div class="border flex_row" style="background-color: white;border-radius: 15px;width: 37%;justify-content: center; ">
+                        <div class=" flex_column" style="width: 90%;height: 80%;gap: 10px;">
+                            <div class="flex_row" style="width: 100%;">
+                                <div style="width: 70%;">
+                                    <p>Remboursements</p>
+                                    <span>3 virements suffisent pour équilibrer le groupe.</span>
+                                </div >
+                                <div class="flex_row" style="width: 20%;height:30px;background-color:#E9F5F2;justify-content: center;border-radius: 15px;"> 3 a faire</div>
+                            </div>
+
+                            <div class="border-top" style="width: 100%;">
+                                <div class="flex_row">
+                                    <div class="flex_row" style="height: 20px;width: 20px;background-color: #E9F5F2;border-radius: 20px;justify-content: center;">K</div>
+                                    <strong>Hugo doit 30 € à Karim</strong>
+                                </div>
+                                <div style="width: 100%;height: 40px;"><button style="height: 100%;width: 100%;background-color: white;border-radius: 15px;">Marquer comme effectué</button></div>
+
+                            </div>
+
+
+                            <div class="border-top" style="width: 100%;">
+                                <div class="flex_row">
+                                    <div class="flex_row" style="height: 20px;width: 20px;background-color: #E9F5F2;border-radius: 20px;justify-content: center;">K</div>
+                                    <strong>Hugo doit 30 € à Karim</strong>
+                                </div>
+                                <div style="width: 100%;height: 40px;"><button style="height: 100%;width: 100%;background-color: white;border-radius: 15px;">Marquer comme effectué</button></div>
+
+                            </div>
+
+                            <div class="border-top" style="width: 100%;">
+                                <div class="flex_row">
+                                    <div class="flex_row" style="height: 20px;width: 20px;background-color: #E9F5F2;border-radius: 20px;justify-content: center;">K</div>
+                                    <strong>Hugo doit 30 € à Karim</strong>
+                                </div>
+                                <div style="width: 100%;height: 40px;"><button style="height: 100%;width: 100%;background-color: white;">Marquer comme effectué</button></div>
+
+                            </div>
+                            <div class="border-top" style="width: 100%;"><p>Confirmez uniquement après le paiement. Aucun virement n’est effectué par SplitMate.</p></div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           <div>Solde = montant payé − part due. Un solde positif est à recevoir ; un solde négatif est à rembourser.</div>
+        </div>
+    </section>
+    <aside style="display: flex;flex-direction: column;align-items: center;gap: 30px;">
+
+        <div class="flex_row" style="width: 60%;height: 80px;justify-content: space-around;">
+            <div class="flex-center" style="height: 40px;width: 40px;background-color: #087F73;border-radius: 15px;">
+                <img src="assets\arrow-left-right.svg" alt="just the site logo"></div>
+            <h1 style="color: #182A3A;font-size: 25px;font-weight: bolder;">SplitMate </h1>
+        </div>
+        <div class="flex_column" style="gap: 15px;width: 50%;">
+            <div class="flex_row" style="align-items: center;;width: 100%;justify-content: start;gap: 15px;">
+                <div style="height: 40px;height: 40px ;border-radius: 15px;display: flex;align-items: center;justify-content: center;"><i class="bi bi-table"></i></div>
+                <div><a href="">Tableau de bord</a></div>
+            </div>
+            <div class="flex_row" style="align-items: center;width: 100%; justify-content: start;gap: 15px;">
+                <div style="height: 40px;height: 40px;border-radius: 15px;display: flex;align-items: center;justify-content: center;"><i class="bi bi-people"></i></div>
+                <div><a href="">groupes</a></div>
+            </div>
+            <div class="flex_row" style="align-items: center;width: 100%; justify-content: start;gap: 15px;">
+                <div style="height: 40px;height: 40px;border-radius: 15px;display: flex;align-items: center;justify-content: center;"><i class="bi bi-cash-coin"></i></div>
+                <div><a href="">depenses</a></div>
+            </div>
+            <div class="flex_row" style="align-items: center;width: 100%;justify-content: start;gap: 15px;">
+                <div style="height: 40px;height: 40px;border-radius: 15px;display: flex;align-items: center;justify-content: center;"><i class="bi bi-arrows"></i></div>
+                <div><a href="">soldes</a></div>
+            </div>
+        </div>
+
+        <div style="margin-top: 400px;">
+            <div style="width: 90%;background-color:  #E9F5F2;border-radius: 15px;">
+                <div class="flex-center" style="height: 40px;width: 40px;;border-radius: 15px;"><img src="assets\handshake.svg" alt=""></div>
+                
+                <h1 style="font-size: 10px;">Les bons comptes, les bons amis.</h1>
+                <p>Partagez les frais, pas les prises de tête.</p>
+            </div>
+            <div class="flex_row" style="justify-content: start;gap: 1px;">
+                <div class="flex_row" style="height: 80px;width: 80px;background:  #E9F5F2;border-radius: 15px;justify-content: center;font-size: 50px;font-weight: bolder;">K</div>
+                <div>
+                    <h1>KARIM</h1>
+                    <p>Espace personnel</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
