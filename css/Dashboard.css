@@ -2,13 +2,31 @@
 body{
     display: grid;
     grid-template-areas: 
-        "aside header header header header header"
-        "aside section section section section section"
-        "aside section section section section section"
-        "aside section section section section section"
-        "aside section section section section section"
-        "aside section section section section section"
-        "aside section section section section section";
+        "aside header header header header header header header"
+        "aside section section section section section section section"
+        "aside section section section section section section section"
+        "aside section section section section section section section"
+        "aside section section section section section section section"
+        "aside section section section section section section section"
+        "aside section section section section section section section"
+        "aside section section section section section section section";
+}
+aside {
+    grid-area: aside;
+    /* zid background-color hna bach tban lik mzyan */
+}
+
+header {
+    grid-area: header;
+}
+
+section {
+    grid-area: section;
+}
+.flex-center{
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex_row {
@@ -21,7 +39,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
 
 }
 .grid{
@@ -62,8 +80,16 @@ body{
 }
 
 
-.width80{
-    width: 80%;
-}
 
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #637383;
+}
+.border_top{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #637383;
+}
 
