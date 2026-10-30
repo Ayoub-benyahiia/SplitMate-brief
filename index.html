@@ -10,6 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/Dashboard.css" class="link">
+    
     <title>Document</title>
 </head>
 
@@ -57,7 +59,7 @@
                     <h3 class="">Vos groupes</h3>
                     <p>espace pour chaque aventure, des comptes clairs pour tous.</p>
                 </div>
-                <div><button class="bg-[#087F73] p-4 rounded-lg"> + Nouveau groupe</button></div>
+                <div><button id="added-group"class="bg-[#087F73] p-4 rounded-lg"> + Nouveau groupe</button></div>
             </div>
 
             <div class="flex flex-row p-2 justify-between border">
@@ -176,6 +178,46 @@
             </div>
         </section>
     </div>
+
+    <div class="flex_row border display_None" id="depencesForm"
+        style="height: 700px;width: 400px;background-color: white;border-radius: 10px;justify-content: center;">
+        <form action="" class="flex_column" style="width: 80%;height: 80%;gap: 30px;">
+            <div class="flex_row ">
+                <div class="flex_row " style="justify-content: start;">
+                    <h1 style="margin-left: 10px;"> creer un nouveau groupe </h1>
+                </div>
+                <button id="button-out" style="background-color: white;">^</button>
+            </div>
+            <div>
+                <strong> Nom de groupe</strong>
+                <input id="inputname" type="text" style="width: 100%;height: 30px;">
+            </div>
+            <div>
+                <strong> description </strong>
+                <input id="inputdesc" type="text" style="width: 100%;height: 80px;">
+            </div>
+            <div class="flex_row">
+                <div style="width: 45%;">
+                    <strong> montant </strong>
+                    <input id="inputmontant" type="text" style="width: 100%;height: 30px;">
+                </div>
+                <div style="width: 45%;">
+                    <strong> date </strong>
+                    <input id="inputdate" type="date" style="width: 100%;height: 30px;">
+                </div>
+
+            </div>
+            <div class="flex_row" style="justify-content: space-evenly;">
+                <button id="button-out" style="width: 100px;height: 40px;background-color: #087F73;border-radius: 5px;color: white;">
+                    Anuller </button>
+                <button id="create-button"style="width: 100px;height: 40px;background-color: #087F73;border-radius: 5px;color: white;"
+                    class="ajouter"> Ajouter </button>
+
+            </div>
+
+        </form>
+    </div>
+    <script src="js/groupes.js" ></script>
 </body>
 
 </html>
