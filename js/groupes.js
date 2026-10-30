@@ -5,12 +5,13 @@ let groupesForm = document.getElementById("depencesForm");
 
 let NameOfGroupes = document.getElementById("inputname");
 let DescOfGroupes = document.getElementById("inputdesc");
-let MontantOfGroupes = document.getElementById("inputmontant");
+let DevisOfGroupes = document.getElementById("selectdevis");
 let DateOfGroupes = document.getElementById("inputdate");
 
 let AnullerButton = document.getElementById("button-out");
 let AjouteButton = document.getElementById("create-button");
 
+let CartesConatainer = document.getElementById("cartesContainer");
 
 const GroupesArray = [];
 
@@ -51,25 +52,25 @@ function creatDepenxe() {
 creatDepenxe();
 
 
-let i =1;
+let i = 1;
 function CreateGroupe() {
     AjouteButton.addEventListener("click", (e) => {
         e.preventDefault();
 
         let groupe = {
-            id:i,
+            id: i,
             title: "",
             description: "",
-            montant: "",
+            Devis: "",
             Date: ""
         }
 
         // step 1 : check the input value
-        if (NameOfGroupes.value.trim().lenght== 0 || DescOfGroupes.value.trim().lenght == 0 || MontantOfGroupes.value.trim().lenght== 0) alert("nsiti chi haja ma3emertihache")
+        if (NameOfGroupes.value.trim().length == 0 || DescOfGroupes.value.trim().length == 0 ) alert("nsiti chi haja ma3emertihache")
         // step 2 : stock the inputs of the form in a object
         groupe.title = NameOfGroupes.value;
         groupe.description = DescOfGroupes.value;
-        groupe.montant = MontantOfGroupes.value;
+        groupe.Devis = DevisOfGroupes.value;
         groupe.Date = DateOfGroupes.value;
         groupe.id = i++;
 
@@ -77,11 +78,47 @@ function CreateGroupe() {
 
         NameOfGroupes.value = ""
         DescOfGroupes.value = ""
-        MontantOfGroupes.value = ""
+        DevisOfGroupes.value = ""
         DateOfGroupes.value = ""
+
+        afficherCartes()
     })
 }
 
-CreateGroupe() 
+CreateGroupe()
 console.log(GroupesArray);
+
+
+
+
+
+function afficherCartes() {
+    GroupesArray.forEach(item => {
+       CartesConatainer.innerHTML += `<div class=" flex flex-col">
+                    <div class="flex flex-row justify-between">
+                        <span>icon</span>
+                        <span>Ouvert</span>
+                    </div>
+
+                    <h2>${item.title}</h2>
+                    <p>${item.description}</p>
+
+                    <div class="p-4">
+                        <span class="bg-[#087F73]">K</span> <span>S</span> <span>L</span> <span>H</span>
+                        <small>4 membres</small>
+                    </div>
+
+                    <hr />
+                    <div class="p-4">
+                        <small>Total dépensé</small>
+                        <h3>280 € <small>${item.Devis}</small></h3>
+                    </div>
+                    <div>
+                        <a href="#">Voir le groupe →</a>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>`
+    });
+}
 
