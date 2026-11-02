@@ -76,6 +76,7 @@ function CreateGroupe() {
 
         GroupesArray.push(groupe)
 
+        // queryselector foreach 
         NameOfGroupes.value = ""
         DescOfGroupes.value = ""
         DevisOfGroupes.value = ""
