@@ -6,6 +6,12 @@ const cartesContainer = document.getElementById("cartesContainer")
 
 
 
+
+
+
+
+
+
 let groupes = [];
 
 
@@ -97,7 +103,13 @@ function deleteGroup(id) {
 };
 
 
-
-
-
+function toggleCloture(id){
+    const clotureG = groupes.find((groupe) => {
+        return groupe.id == id
+    });
+    if(!clotureG) return;
+    clotureG.cloture = !clotureG.cloture
+    getGroupes()
+    return clotureG
+};
 
