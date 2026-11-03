@@ -28,9 +28,10 @@ function createGroup({ nom, description, devise, dateDebut }) {
     return groupe;
 };
 
+
 const g1 = createGroup({ nom: "Colocation", description: "test", devise: "EUR", dateDebut: "2026-10-26" });
 // console.log(g1);
-
+getGroupes();
 
 
 
@@ -65,12 +66,19 @@ function getGroupes() {
 };
 
 
-function updateGroupe(id) {
+
+function updateGroupe(id, change) {
+
     const myGroupe = groupes.find((groupe) => {
-        return groupe.id == id
+        return groupe.id == id;
     });
-    getGroupes()
-    return myGroupe
+    if (!myGroupe) return;
+
+    Object.assign(myGroupe, change);
+
+    getGroupes();
+
+    return myGroupe;
 };
 
 // const g = createGroup({ nom: "agadir", description: "imioudare", devise: "EUR", dateDebut: "2026-10-26" });
@@ -87,4 +95,9 @@ function deleteGroup(id) {
     getGroupes();
     return groupes
 };
+
+
+
+
+
 
