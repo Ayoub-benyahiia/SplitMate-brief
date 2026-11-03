@@ -103,7 +103,7 @@ function deleteGroup(id) {
 };
 
 
-function toggleCloture(id){
+function reverseCloture(id){
     const clotureG = groupes.find((groupe) => {
         return groupe.id == id
     });
