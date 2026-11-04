@@ -9,10 +9,10 @@ let allmembres = [];
 
 function addMembre({ groupeId, nom, pseudo }) {
     const membre = {
-        id : Date.now(),
+        id: Date.now(),
         groupeId: groupeId,
-        nom : nom,
-        pseudo : pseudo,
+        nom: nom,
+        pseudo: pseudo,
     };
     allmembres.push(membre);
     return membre
@@ -20,15 +20,15 @@ function addMembre({ groupeId, nom, pseudo }) {
 
 
 
-function getMemberByGroup(Id){
-    const memberbyG = allmembres.filter((member) =>{
+function getMemberByGroup(Id) {
+    const memberbyG = allmembres.filter((member) => {
         return member.groupeId == Id
     });
     return memberbyG
 };
 
 
-function displayMembres(memberbyG){
+function displayMembres(memberbyG) {
     membersContainers.innerHTML = memberbyG.map(memb => {
         return `<div class="bg-white flex border justify-between p-8">
                         <div>
@@ -53,3 +53,17 @@ function displayMembres(memberbyG){
 
 // displayMembres(getMemberByGroup(500));
 
+function updateMembre(id, change) {
+    const myMember = allmembres.find((member) => {
+        return member.id == id
+    });
+    if (!myMember) return;
+    Object.assign(myMember, change);
+    displayMembres((getMemberByGroup(myMember.groupeId)))
+    return myMember
+};
+
+
+function deleteMembre(){
+    const savedGroupeId = myMember.groupeId;
+}
