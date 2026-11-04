@@ -1,4 +1,4 @@
-
+const membersContainers = document.getElementById("membersContainers")
 
 
 
@@ -8,22 +8,48 @@
 let allmembres = [];
 
 function addMembre({ groupeId, nom, pseudo }) {
-    const membres = {
+    const membre = {
         id : Date.now(),
         groupeId: groupeId,
         nom : nom,
         pseudo : pseudo,
     };
-    allmembres.push(membres);
-    return membres
+    allmembres.push(membre);
+    return membre
 };
 
 
 
 function getMemberByGroup(Id){
-    const memberbyG = membres.filter((member) =>{
+    const memberbyG = allmembres.filter((member) =>{
         return member.groupeId == Id
     });
     return memberbyG
 };
+
+
+function displayMembres(memberbyG){
+    membersContainers.innerHTML = memberbyG.map(memb => {
+        return `<div class="bg-white flex border justify-between p-8">
+                        <div>
+                            <h3>${memb.nom}</h3>
+                            <p>3 dépenses</p>
+                        </div>
+                        <div class="flex gap-20">
+                            <div><button
+                                    class="bg-teal-700 hover:bg-teal-800 text-white font-medium py-2 px-4 rounded-md transition-colors">modifier</button>
+                            </div>
+                            <div><button
+                                    class="bg-red-700 hover:bg-teal-800 text-white font-medium py-2 px-4 rounded-md transition-colors">remove</button>
+                            </div>
+                        </div>
+                    </div>`
+    }).join("");
+};
+
+// addMembre({ groupeId: 500, nom: "Karim", pseudo: "kk" });
+// addMembre({ groupeId: 500, nom: "Sara", pseudo: "sara" });
+// addMembre({ groupeId: 777, nom: "Omar", pseudo: "om" });
+
+// displayMembres(getMemberByGroup(500));
 
