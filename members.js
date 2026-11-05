@@ -67,3 +67,14 @@ function updateMembre(id, change) {
 function deleteMembre(){
     const savedGroupeId = myMember.groupeId;
 }
+
+
+function deleteGroup(id) {
+    const gIndex = groupes.findIndex((groupe) => groupe.id == id)
+
+    if (gIndex !== -1) {
+        groupes.splice(gIndex, 1)
+    };
+    getGroupes();
+    return groupes
+};
