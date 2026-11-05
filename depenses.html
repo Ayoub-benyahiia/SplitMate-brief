@@ -44,24 +44,23 @@
 
 
 
-            <div class="flex_row" style="background-color: white;border-radius: 15px;">
+            <div class="flex_row" style="background-color: white;border-radius: 15px;" id="groupdepenceInfos">
                 <div style="width: 70%;">
                     <div class="flex_row border"
                         style="justify-content: space-around;height: 40px;border-radius: 15px;width: 30%;">
-                        <div><i class="bi bi-house-door"></i></div>
-                        <div style="width: 50%;">Colocation</div>
-                        <div>EUR</div>
-                        <div><i class="bi bi-arrow-bar-down"></i></div>
+                        <select>
+                            <option value="choisir le group">choisir le group</option>
+                        </select>
                     </div>
-                    <p>Karim, Sara, Léa et Hugo · Parts égales</p>
+                    <p> Parts égales</p>
                 </div>
                 <div style="width: 10%;">
                     <p>Dépenses</p>
-                    <h1>4</h1>
+                    <h1>0</h1>
                 </div>
                 <div style="width: 10%;">
                     <p>Total · EUR</p>
-                    <h1> 280$</h1>
+                    <h2> 0 $</h2>
                 </div>
             </div>
 
@@ -79,13 +78,13 @@
                     <div>
                         <p>Catégorie</p>
                         <select style="width:100%;height: 40px;border-radius: 10px;" id="chercherParcategorie" >
-                            <option value="Toutes les catégories " >Toutes les catégories</option>
+                            <option value="Toutes les catégories" >Toutes les catégories</option>
                         </select>
                     </div>
                     <div>
                         <p>Payeur</p>
                         <select style="width:100%;height: 40px;border-radius: 10px;" id="chercherParPayeur">
-                            <option value="Tous les payeurs ">Tous les payeurs</option>
+                            <option value="Tous les payeurs">Tous les payeurs</option>
                         </select>
                     </div>
                 </div>
@@ -157,9 +156,9 @@
 <!-- 
                         </div> -->
 
-                        <div class="flex_row">
-                            <p>4 dépense sur 4</p>
-                            <strong>Total : 280 $</strong>
+                        <div class="flex_row" id="tablefooter">
+                            <p>0 dépense sur 0</p>
+                            <strong>Total : 0 $</strong>
                         </div>
 
                     </div>
@@ -207,6 +206,12 @@
                     <input type="date" style="width: 100%;height: 30px;" id="dateDepenceinput">
                 </div>
 
+            </div>
+            <div>
+                <strong>choisir le group</strong>
+                <select style="width: 100%;height: 30px;" id="groupOPtion">
+                    <option value=" "></option>
+                </select>
             </div>
             <div>
                 <strong> payer par : </strong>
