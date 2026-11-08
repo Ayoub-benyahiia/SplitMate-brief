@@ -64,17 +64,13 @@ function updateMembre(id, change) {
 };
 
 
-function deleteMembre(){
-    const savedGroupeId = myMember.groupeId;
+function deleteMembre(id) {
+    const index = allmembres.findIndex((member) => member.id == id);
+    if (index !== -1) {
+        const savedGroupeId = allmembres[index].groupeId;
+        allmembres.splice(index, 1);
+        displayMembres(getMemberByGroup(savedGroupeId));
+        return true;
+    }
+    return false;
 }
-
-
-function deleteGroup(id) {
-    const gIndex = groupes.findIndex((groupe) => groupe.id == id)
-
-    if (gIndex !== -1) {
-        groupes.splice(gIndex, 1)
-    };
-    getGroupes();
-    return groupes
-};
