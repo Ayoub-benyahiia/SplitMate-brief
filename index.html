@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/Dashboard.css" class="link">
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/css/Dashboard.css" class="link">
-
     <title>Document</title>
 </head>
 
+
 <body>
     <div class="flex">
+
 
         <div class=" bg-white basis-auto flex-col w-60 gap-100px min-h-screen ">
             <aside class=" flex flex-col justify-between min-h-screen p-4 ">
                 <div>
                     <div><img src="Assets/Pasted image (2).png"></div>
+
 
                     <div class="flex flex-col gap-1 mt-8 =">
                         <a href="#">Tableau de bord</a>
@@ -34,7 +37,7 @@
                     <div class="flex flex-col gap-1 mt-8">
                         <div class="size"><img src="Assets/Pasted image.png"></div>
                         <h3>Les bons comptes, les bons amis.</h3>
-                        <smal>Partagez les frais, pas les prises de tête.</smal>
+                        <small>Partagez les frais, pas les prises de tête.</small>
                     </div>
                     <div class=" flex flex-row p-1 gap-3 mt-8">
                         <div class="size-10"><img src="Assets/Pasted image (3).png"></div>
@@ -49,6 +52,9 @@
 
 
 
+
+
+
         <section class="min-h-screen bg-[#DFE6EB]">
             <div class=" flex flex-row justify-between justify-items-end bg-white p-6">
                 <a>Mon espace > Groupes</a>
@@ -59,8 +65,9 @@
                     <h3 class="">Vos groupes</h3>
                     <p>espace pour chaque aventure, des comptes clairs pour tous.</p>
                 </div>
-                <div><button id="added-group" class="bg-[#087F73] p-4 rounded-lg"> + Nouveau groupe</button></div>
+                <div><button class="bg-[#087F73] p-4 rounded-lg" id="added-group"> + Nouveau groupe</button></div>
             </div>
+
 
             <div class="flex flex-row p-2 justify-between border">
                 <div class="flex flex row gap-6 p-6">
@@ -73,6 +80,7 @@
                 </div>
             </div>
 
+
             <div class="grid grid-cols-3 gap-6 bg-white rounded-lg border p-6" id="cartesContainer">
                 <!-- <div class=" flex flex-col">
                     <div class="flex flex-row justify-between">
@@ -80,13 +88,16 @@
                         <span>Ouvert</span>
                     </div>
 
+
                     <h2>Colocation</h2>
                     <p>Les dépenses du quotidien, à quatre et sans prise de tête.</p>
+
 
                     <div class="p-4">
                         <span class="bg-[#087F73]">K</span> <span>S</span> <span>L</span> <span>H</span>
                         <small>4 membres</small>
                     </div>
+
 
                     <hr />
                     <div class="p-4">
@@ -101,19 +112,24 @@
                 </div>
 
 
+
+
                 <div class="">
                     <div class="top">
                         <span>icon</span>
                         <span>Ouvert</span>
                     </div>
 
+
                     <h2>Colocation</h2>
                     <p>Les dépenses du quotidien, à quatre et sans prise de tête.</p>
+
 
                     <div class="p-4">
                         <span class="bg-[#087F73]">K</span> <span>S</span> <span>L</span> <span>H</span>
                         <small>4 membres</small>
                     </div>
+
 
                     <hr />
                     <div class="p-4">
@@ -128,19 +144,24 @@
                 </div>
 
 
+
+
                 <div class="">
                     <div class="top">
                         <span>icon</span>
                         <span>Ouvert</span>
                     </div>
 
+
                     <h2>Colocation</h2>
                     <p>Les dépenses du quotidien, à quatre et sans prise de tête.</p>
+
 
                     <div class="p-4">
                         <span class="bg-[#087F73]">K</span> <span>S</span> <span>L</span> <span>H</span>
                         <small>4 membres</small>
                     </div>
+
 
                     <hr />
                     <div class="p-4">
@@ -154,7 +175,9 @@
                     </div>
                 </div> -->
 
+
             </div>
+
 
             <div class="flex bg-white p-8 justify-between border">
                 <div class="flex-row">
@@ -171,14 +194,16 @@
                 </div>
             </div>
 
+
             <div class="pt-4 pb-4 px-8">
                 <p>Un groupe clôturé reste consultable. Les membres présents dans plusieurs groupes ne sont comptés
                     qu’une
                     seule fois dans votre récapitulatif.</p>
             </div>
         </section>
-    </div>
 
+
+    </div>
     <div class="flex_row border display_None" id="depencesForm"
         style="height: 700px;width: 400px;background-color: white;border-radius: 10px;justify-content: center;">
         <form action="" class="flex_column" style="width: 80%;height: 80%;gap: 30px;">
@@ -225,7 +250,7 @@
 
         </form>
     </div>
-    <script src="js/groupes.js"></script>
+    <script src="/js/groupes.js"></script>
 </body>
 
 </html>
